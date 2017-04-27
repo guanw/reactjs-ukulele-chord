@@ -1,0 +1,27 @@
+{
+  "name": "reactjs-chord",
+  "version": "1.0.1",
+  "description": "reactjs components of pianosnake/uke-chord project",
+  "main": "./index.js",
+  "keywords": [
+    "reactjs",
+    "uke-chord"
+  ],
+  "author": "Jude Wang",
+  "license": "MIT",
+  "dependencies": {
+    "prop-types": "^15.5.8",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "webpack": "^2.4.1",
+    "webpack-dev-server": "^2.4.5"
+  },
+  "devDependencies": {
+    "babel-core": "^6.5.1",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-react": "^6.5.0",
+    "bower-webpack-plugin": "^0.1.9",
+    "webpack": "^2.2.0"
+  }
+}
