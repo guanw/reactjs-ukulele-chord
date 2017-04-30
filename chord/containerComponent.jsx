@@ -4,6 +4,14 @@ import PropTypes from 'prop-types';
 var stringsNum = 4;
 
 var ChordComponent = React.createClass({
+	getDefaultProps: function(){
+        return {
+            subText: PropTypes.string,
+            fingers: PropTypes.string,
+            chordName: PropTypes.string,
+            fret: PropTypes.string
+        }
+    },
     parseFingers: function(fingers){
 
         if(!fingers) return null;
@@ -35,8 +43,6 @@ var ChordComponent = React.createClass({
         };
     },
     render: function(){
-        //test
-
         var subText = this.props.subText.split(",");
         var frets_object = this.parseFrets(this.props.fret);
         return (
@@ -53,12 +59,4 @@ var ChordComponent = React.createClass({
         );
     }
 });
-
-ChordComponent.propTypes = {
-    subText: PropTypes.string,
-    fingers: PropTypes.string,
-    chordName: PropTypes.string,
-    fret: PropTypes.string
-
-};
 module.exports = ChordComponent;
