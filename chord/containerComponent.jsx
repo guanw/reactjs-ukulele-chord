@@ -29,9 +29,8 @@ var ChordComponent = React.createClass({
                 openStringVisibility[idx] = "visible";
             }else{
                 closedStringVisibility[idx] = "visible";
-                closedStringTransform.push("translate(" + idx * 20 + ", " + (fret - 1) * 20 + ")");
             }
-
+            closedStringTransform.push("translate(" + idx * 20 + ", " + (fret - 1) * 20 + ")");
         });
         return {
             openStringVisibility: openStringVisibility,
