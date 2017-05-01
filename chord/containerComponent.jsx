@@ -1,23 +1,20 @@
 var React    = require('react');
 var ChordPresentationalComponent = require('./presentationalComponent');
-import PropTypes from 'prop-types';
 var stringsNum = 4;
 
 var ChordComponent = React.createClass({
 	getDefaultProps: function(){
         return {
-            subText: PropTypes.string,
-            fingers: PropTypes.string,
-            chordName: PropTypes.string,
-            fret: PropTypes.string
+            subText: React.PropTypes.string,
+            fingers: React.PropTypes.string,
+            chordName: React.PropTypes.string,
+            fret:   React.PropTypes.string.isRequired
         }
     },
     parseFingers: function(fingers){
 
-        if(!fingers) return null;
-        if(fingers.length !== stringsNum) return null;
+        if(!fingers || fingers.length !== stringsNum) return ["","","",""];
         fingers = fingers.split("");
-
         return fingers;
     },
     parseFrets: function(frets){
