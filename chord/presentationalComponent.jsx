@@ -17,7 +17,7 @@ var chordPresentationalComponent = React.createClass({
                     <title>[[title]] chord | http://pianosnake.github.io/uke-chord/</title>
                     <text x="48" y="16" textAnchor="middle" style={chordPresentationalComponent.chordNameStyle}>{this.props.chordName}</text>
                     <rect height="4" width="62" fill="black" style={chordPresentationalComponent.visibilityHidden}/>
-                    <g transform="translate(17,20)">
+                    <g transform="translate(17,30)">
                         <g transform="translate(0,2)">
                             <rect height="80" width="2" x="0"  fill="black"/>
                             <rect height="80" width="2" x="20" fill="black"/>

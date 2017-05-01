@@ -43,7 +43,10 @@ var ChordComponent = React.createClass({
         };
     },
     render: function(){
-        var subText = this.props.subText.split(",");
+        var subText = ["","","",""];
+        if (this.props.subText){
+            subText = this.props.subText.split(",");
+        }
         var frets_object = this.parseFrets(this.props.fret);
         return (
             <div>
