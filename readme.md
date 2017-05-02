@@ -3,7 +3,9 @@ reactjs-chord is a package that you could use to create your own ukulele reactjs
 
 This will get you set up with installing the package of reactjs-chord.
 
-
+----
+## Star this on Github if you like it:
+https://github.com/guanw/reactjs-ukulele-chord
 
 ----
 ## Install

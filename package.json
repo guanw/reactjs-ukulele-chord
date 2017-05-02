@@ -1,6 +1,6 @@
 {
   "name": "reactjs-chord",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "reactjs components of pianosnake/uke-chord project",
   "main": "./index.js",
   "keywords": [
